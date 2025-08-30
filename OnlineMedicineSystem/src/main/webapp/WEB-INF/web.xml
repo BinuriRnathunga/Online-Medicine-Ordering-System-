@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Servlet for Adding Medicine -->
+    <servlet>
+        <servlet-name>addmed</servlet-name>
+        <servlet-class>com.medicine.addMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addmed</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Servlet for Updating Medicine -->
+    <servlet>
+        <servlet-name>updatemed</servlet-name>
+        <servlet-class>com.medicine.updateMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatemed</servlet-name>
+        <url-pattern>/updmed</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for Deleting Medicine -->
+    <servlet>
+        <servlet-name>dlemed</servlet-name>
+        <servlet-class>com.medicine.deleteMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dlemed</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+	<!-- Servlet for Viewing Medicines -->
+	<servlet>
+	    <servlet-name>viewmed</servlet-name>
+	    <servlet-class>com.medicine.viewMedicineServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>viewmed</servlet-name>
+	    <url-pattern>/viewMedicineServlet</url-pattern>
+	</servlet-mapping>
+    
+    <!-- Default servlet mappings for JSP pages -->
+    <welcome-file-list>
+        <welcome-file>homePage.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4" id="WebApp_ID">
+	<display-name>OnlineMedicineSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
+</element>
